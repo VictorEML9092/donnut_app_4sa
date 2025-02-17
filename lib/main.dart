@@ -17,6 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        tabBarTheme: const TabBarTheme(
+          indicatorColor: Colors.pink,
+        ),
       ),
       home: const HomePage(),
     );
