@@ -6,7 +6,7 @@ class SmoothieTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Smoothie Tap"),
+      child: Text("SmoothieTab"),
     );
   }
 }

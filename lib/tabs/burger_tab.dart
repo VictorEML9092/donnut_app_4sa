@@ -6,7 +6,7 @@ class BurgerTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Burger Tap"),
+      child: Text("BurgerTab"),
     );
   }
 }

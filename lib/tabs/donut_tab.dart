@@ -5,8 +5,17 @@ class DonutTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Donut Tap"),
-    );
+    return GridView.builder(
+        // Prepa 1: cómo se va a organizar
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            // Número de columnas
+            crossAxisCount: 2),
+        // Cuántos elementos
+        itemCount: 2,
+        padding: const EdgeInsets.all(12),
+        // Qué elemento se construirá
+        itemBuilder: (context, index) {
+          return;
+        });
   }
 }
