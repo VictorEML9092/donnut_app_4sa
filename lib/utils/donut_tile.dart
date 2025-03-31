@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class DonutTile extends StatelessWidget {
   final String donutFlavor;
+  final String donutStore;
   final String donutPrice;
   final dynamic donutColor;
   final String imageName;
@@ -11,7 +12,8 @@ class DonutTile extends StatelessWidget {
       required this.imageName,
       required this.donutColor,
       required this.donutPrice,
-      required this.donutFlavor});
+      required this.donutFlavor,
+      required this.donutStore});
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +28,7 @@ class DonutTile extends StatelessWidget {
         child: Column(
           children: [
             Row(
+              // Alinea el precio a la derecha
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Container(
@@ -46,6 +49,45 @@ class DonutTile extends StatelessWidget {
                 ),
               ],
             ),
+            // Donut orice
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              child: Image.asset(imageName),
+            ),
+            // Donut flavor text
+            Text(donutFlavor,
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: donutColor)),
+            const SizedBox(
+              height: 15,
+            ),
+            Text(donutStore, style: TextStyle(color: Colors.grey)),
+            // Icons
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              child: Row(
+                // Alinea el icono a la izquierda
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.favorite_border),
+                    iconSize: 40,
+                  ),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text('Add',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            decoration: TextDecoration.underline,
+                          )))
+                ],
+              ),
+            )
           ],
         ),
       ),
