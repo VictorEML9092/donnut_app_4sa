@@ -66,7 +66,7 @@ class DonutTile extends StatelessWidget {
             Text(donutStore, style: TextStyle(color: Colors.grey)),
             // Icons
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
               child: Row(
                 // Alinea el icono a la izquierda
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
