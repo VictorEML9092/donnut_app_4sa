@@ -6,21 +6,24 @@ class DonutTile extends StatelessWidget {
   final String donutPrice;
   final dynamic donutColor;
   final String imageName;
+  final VoidCallback
+      onAddToCart; // Función que se llama cuando se hace click en "Add"
 
-  const DonutTile(
-      {super.key,
-      required this.imageName,
-      required this.donutColor,
-      required this.donutPrice,
-      required this.donutFlavor,
-      required this.donutStore});
+  const DonutTile({
+    super.key,
+    required this.imageName,
+    required this.donutColor,
+    required this.donutPrice,
+    required this.donutFlavor,
+    required this.donutStore,
+    required this.onAddToCart, // Asegúrate de pasarla
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        //color: donutColor[50],
         decoration: BoxDecoration(
           color: donutColor[50],
           borderRadius: BorderRadius.circular(24),
@@ -28,7 +31,6 @@ class DonutTile extends StatelessWidget {
         child: Column(
           children: [
             Row(
-              // Alinea el precio a la derecha
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Container(
@@ -49,26 +51,20 @@ class DonutTile extends StatelessWidget {
                 ),
               ],
             ),
-            // Donut orice
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               child: Image.asset(imageName),
             ),
-            // Donut flavor text
             Text(donutFlavor,
                 style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: donutColor)),
-            const SizedBox(
-              height: 15,
-            ),
+            const SizedBox(height: 15),
             Text(donutStore, style: TextStyle(color: Colors.grey)),
-            // Icons
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
               child: Row(
-                // Alinea el icono a la izquierda
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
@@ -77,14 +73,17 @@ class DonutTile extends StatelessWidget {
                     iconSize: 40,
                   ),
                   TextButton(
-                      onPressed: () {},
-                      child: Text('Add',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            decoration: TextDecoration.underline,
-                          )))
+                    onPressed: onAddToCart, // Llamamos la función aquí
+                    child: Text(
+                      'Add',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  )
                 ],
               ),
             )

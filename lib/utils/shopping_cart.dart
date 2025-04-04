@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ShoppingCart extends StatelessWidget {
+  final List<Map<String, dynamic>> items;
+  final double totalPrice;
+
   const ShoppingCart({
     super.key,
+    required this.items,
+    required this.totalPrice,
   });
 
   @override
@@ -13,30 +18,32 @@ class ShoppingCart extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Padding(
-            padding: EdgeInsets.only(left: 28),
+          Padding(
+            padding: const EdgeInsets.only(left: 28),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '2 Items | \$45 ',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  '${items.length} Items | \$${totalPrice.toStringAsFixed(2)}',
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18),
                 ),
-                Text('Delivery Charges Included')
+                const Text('Delivery Charges Included')
               ],
             ),
           ),
           ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 24, vertical: 12)),
-              child: const Text(
-                'View Cart',
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-              ))
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.pink,
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            ),
+            child: const Text(
+              'View Cart',
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+          )
         ],
       ),
     );
