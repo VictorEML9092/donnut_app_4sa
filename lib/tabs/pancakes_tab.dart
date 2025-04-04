@@ -8,32 +8,60 @@ class PanCakesTab extends StatelessWidget {
 
   final List<List<dynamic>> donutsOnSale = [
     [
-      "Ice Cream",
-      "Krispy Kreme",
-      36,
+      "Apple",
+      "Denny's",
+      99,
       Colors.blue,
-      "lib/images/icecream_donut.png"
+      "lib/images/Pancakes/Pancake_Manzana.png"
     ],
     [
-      "Strawberry",
-      "Cantarella´s Donuts",
-      45,
+      "Ricotta",
+      "Denny's",
+      89,
+      Colors.blue,
+      "lib/images/Pancakes/Pancake_Ricotta.png"
+    ],
+    [
+      "Banana",
+      "Pancake House",
+      100,
       Colors.red,
-      "lib/images/strawberry_donut.png"
+      "lib/images/Pancakes/Pancake_Banana.png"
     ],
     [
-      "Grape Ape",
-      "Pandy Donuts",
-      84,
+      "Pumpkin",
+      "Pancake House",
+      105,
+      Colors.red,
+      "lib/images/Pancakes/Pancake_Calabaza.png"
+    ],
+    [
+      "Oatmeal",
+      " Magnolia Bakery",
+      85,
       Colors.purple,
-      "lib/images/grape_donut.png"
+      "lib/images/Pancakes/Pancake_Avena.png"
+    ],
+    [
+      "Coco",
+      " Magnolia Bakery",
+      107,
+      Colors.purple,
+      "lib/images/Pancakes/Pancake_Coco.png"
     ],
     [
       "Choco",
-      "Donkin Donuts",
-      95,
+      "Panera Bread",
+      110,
       Colors.brown,
-      "lib/images/chocolate_donut.png"
+      "lib/images/Pancakes/Pancake_Choco.png"
+    ],
+    [
+      "Almond",
+      "Panera Bread",
+      115,
+      Colors.brown,
+      "lib/images/Pancakes/Pancake_Almendra.png"
     ],
   ];
 

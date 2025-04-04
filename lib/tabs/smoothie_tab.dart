@@ -8,32 +8,60 @@ class SmoothieTab extends StatelessWidget {
 
   final List<List<dynamic>> donutsOnSale = [
     [
-      "Ice Cream",
-      "Krispy Kreme",
-      36,
-      Colors.blue,
-      "lib/images/icecream_donut.png"
+      "Mango a GoGo",
+      "Jamba",
+      40,
+      Colors.green,
+      "lib/images/Smoothies/Smoothie_Mango.png"
     ],
     [
-      "Strawberry",
-      "Cantarella´s Donuts",
+      "Razzmatazz",
+      "Jamba",
       45,
+      Colors.green,
+      "lib/images/Smoothies/Smoothie_Razz.png"
+    ],
+    [
+      "Coco Colada",
+      "Smoothie King",
+      25,
       Colors.red,
-      "lib/images/strawberry_donut.png"
+      "lib/images/Smoothies/Smoothie_Coco.png"
     ],
     [
-      "Grape Ape",
-      "Pandy Donuts",
-      84,
-      Colors.purple,
-      "lib/images/grape_donut.png"
+      "Berry Goji",
+      "Smoothie King",
+      30,
+      Colors.red,
+      "lib/images/Smoothies/Smoothie_Berry.png"
     ],
     [
-      "Choco",
-      "Donkin Donuts",
-      95,
-      Colors.brown,
-      "lib/images/chocolate_donut.png"
+      "Avocolada",
+      "TropicalSmoothie Café",
+      50,
+      Colors.blue,
+      "lib/images/Smoothies/Smoothie_Avo.png"
+    ],
+    [
+      "Mocha MDS",
+      "TropicalSmoothie Café",
+      62,
+      Colors.blue,
+      "lib/images/Smoothies/Smoothie_Moka.png"
+    ],
+    [
+      "Dragon Fruit",
+      "Zumit",
+      75,
+      Colors.orange,
+      "lib/images/Smoothies/Smoothie_Dragon.png"
+    ],
+    [
+      "Delightful",
+      "Zumit",
+      70,
+      Colors.orange,
+      "lib/images/Smoothies/Smoothie_Deli.png"
     ],
   ];
 

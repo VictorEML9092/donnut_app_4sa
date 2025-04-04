@@ -8,32 +8,60 @@ class DonutTab extends StatelessWidget {
 
   final List<List<dynamic>> donutsOnSale = [
     [
-      "Ice Cream",
+      "Sugared",
       "Krispy Kreme",
-      36,
+      20,
       Colors.blue,
-      "lib/images/icecream_donut.png"
+      "lib/images/Donuts/Dona_Azucarada.png"
+    ],
+    [
+      "Maple",
+      "Krispy Kreme",
+      30,
+      Colors.blue,
+      "lib/images/Donuts/Dona_Maple.png"
     ],
     [
       "Strawberry",
       "Cantarella´s Donuts",
-      45,
+      25,
       Colors.red,
-      "lib/images/strawberry_donut.png"
+      "lib/images/Donuts/Dona_Fresa.png"
+    ],
+    [
+      "Vanilla",
+      "Cantarella´s Donuts",
+      24,
+      Colors.red,
+      "lib/images/Donuts/Dona_Vainilla.png"
     ],
     [
       "Grape Ape",
       "Pandy Donuts",
-      84,
+      32,
       Colors.purple,
-      "lib/images/grape_donut.png"
+      "lib/images/Donuts/Dona_Uva.png"
+    ],
+    [
+      "Mocha",
+      "Pandy Donuts",
+      35,
+      Colors.purple,
+      "lib/images/Donuts/Dona_Moka.png"
     ],
     [
       "Choco",
       "Donkin Donuts",
-      95,
+      27,
       Colors.brown,
-      "lib/images/chocolate_donut.png"
+      "lib/images/Donuts/Dona_Choco.png"
+    ],
+    [
+      "Oranje",
+      "Donkin Donuts",
+      33,
+      Colors.brown,
+      "lib/images/Donuts/Dona_Naranja.png"
     ],
   ];
 

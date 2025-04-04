@@ -8,32 +8,60 @@ class BurgerTab extends StatelessWidget {
 
   final List<List<dynamic>> donutsOnSale = [
     [
-      "Ice Cream",
-      "Krispy Kreme",
-      36,
-      Colors.blue,
-      "lib/images/icecream_donut.png"
-    ],
-    [
-      "Strawberry",
-      "Cantarella´s Donuts",
-      45,
+      "Bacon Feast",
+      "Burger King",
+      120,
       Colors.red,
-      "lib/images/strawberry_donut.png"
+      "lib/images/Burgers/Hamburguesa_Tocino.png"
     ],
     [
-      "Grape Ape",
-      "Pandy Donuts",
-      84,
-      Colors.purple,
-      "lib/images/grape_donut.png"
+      "Cheese",
+      "Burger King",
+      100,
+      Colors.red,
+      "lib/images/Burgers/Hamburguesa_Cheese.png"
     ],
     [
-      "Choco",
-      "Donkin Donuts",
-      95,
-      Colors.brown,
-      "lib/images/chocolate_donut.png"
+      "Big Mac",
+      "McDonald's",
+      110,
+      Colors.orange,
+      "lib/images/Burgers/Hamburguesa_Mac.png"
+    ],
+    [
+      "McChicken",
+      "McDonald's",
+      125,
+      Colors.orange,
+      "lib/images/Burgers/Hamburguesa_Pollo.png"
+    ],
+    [
+      "Jack Daniel's",
+      "Angry Angus",
+      155,
+      Colors.green,
+      "lib/images/Burgers/Hamburguesa_Jack.png"
+    ],
+    [
+      "Italian Burger",
+      "Angry Angus",
+      165,
+      Colors.green,
+      "lib/images/Burgers/Hamburguesa_Italian.png"
+    ],
+    [
+      "Super Star",
+      "Carl's Jr",
+      170,
+      Colors.blueGrey,
+      "lib/images/Burgers/Hamburguesa_Star.png"
+    ],
+    [
+      "Guacamole B.",
+      "Carl's Jr",
+      150,
+      Colors.blueGrey,
+      "lib/images/Burgers/Hamburguesa_Guacamole.png"
     ],
   ];
 

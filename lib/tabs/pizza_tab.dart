@@ -8,32 +8,60 @@ class PizzaTab extends StatelessWidget {
 
   final List<List<dynamic>> donutsOnSale = [
     [
-      "Ice Cream",
-      "Krispy Kreme",
-      36,
+      "Hawaiana",
+      "Domino's Pizza",
+      210,
       Colors.blue,
-      "lib/images/icecream_donut.png"
+      "lib/images/Pizzas/Pizza_Hawaiana.png"
     ],
     [
-      "Strawberry",
-      "Cantarella´s Donuts",
-      45,
+      "Mexican",
+      "Domino's Pizza",
+      235,
+      Colors.blue,
+      "lib/images/Pizzas/Pizza_Mexicana.png"
+    ],
+    [
+      "Haw. Chiken",
+      "Pizza Hut",
+      250,
       Colors.red,
-      "lib/images/strawberry_donut.png"
+      "lib/images/Pizzas/Pizza_Cheesy.png"
     ],
     [
-      "Grape Ape",
-      "Pandy Donuts",
-      84,
-      Colors.purple,
-      "lib/images/grape_donut.png"
+      "Cruchy Dips",
+      "Pizza Hut",
+      225,
+      Colors.red,
+      "lib/images/Pizzas/Pizza_Crunchy.png"
     ],
     [
-      "Choco",
-      "Donkin Donuts",
-      95,
-      Colors.brown,
-      "lib/images/chocolate_donut.png"
+      "Pepperoni",
+      "Little Caesars",
+      169,
+      Colors.orange,
+      "lib/images/Pizzas/Pizza_Pepperoni.png"
+    ],
+    [
+      "Mushroom",
+      "Little Caesars",
+      182,
+      Colors.orange,
+      "lib/images/Pizzas/Pizza_Champiñon.png"
+    ],
+    [
+      "Bacon",
+      "Papa John's",
+      169,
+      Colors.green,
+      "lib/images/Pizzas/Pizza_Tocino.png"
+    ],
+    [
+      "Jalapeño",
+      "Papa John's",
+      145,
+      Colors.green,
+      "lib/images/Pizzas/Pizza_Jalapeño.png"
     ],
   ];
 
